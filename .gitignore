@@ -28,6 +28,7 @@ logs/
 ## chaves ###
 chavePrivada.key
 chavePublica.pub
+application.properties
 
 ### NetBeans ###
 /nbproject/private/
