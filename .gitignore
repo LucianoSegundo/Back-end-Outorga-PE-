@@ -25,6 +25,7 @@ logs/
 *.tmp
 
 
+
 ## chaves ###
 chavePrivada.key
 chavePublica.pub
