@@ -3,6 +3,7 @@ package com.Lsegundo.BackendOutorgaPE.entidades.ComplementoUsuario;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "tabela_funcoes")
 public class Funcao {
 
     @Id

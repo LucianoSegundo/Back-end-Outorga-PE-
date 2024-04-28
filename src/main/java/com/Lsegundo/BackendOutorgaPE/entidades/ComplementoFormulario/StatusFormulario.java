@@ -3,8 +3,8 @@ package com.Lsegundo.BackendOutorgaPE.entidades.ComplementoFormulario;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "tabela_finalidade")
-public class Finalidade {
+@Table(name = "tabela_status")
+public class StatusFormulario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,27 +16,25 @@ public class Finalidade {
     private String nome;
 
     public  enum valores{
-        IRRIGACAO(1L),
-        CONSUMO_ANIMAL(2L),
-        CONSUMO_HUMANO(3L),
-        ABASTECIMENTO_PUBLICO(4L),
-        AQUICULTURA(5L),
-        INDUSTRIA(6L),
-        EXTRACAO_MINERAL(7L),
-        DESASSOREAMENTO(8L);
 
-        Long finalidade;
+        AGUARDANDO(1L),
+        ANALISE(2L),
+        RECUSADO(3L),
 
-        valores(Long finalidade) {
-            this.finalidade = finalidade;
+        ACEITO(4L);
+
+        long status;
+
+        valores(long status) {
+            this.status = status;
         }
 
-        public long getFinalidade() {
-            return finalidade;
+        public long getStatus() {
+            return status;
         }
 
-        public void setFinalidade(Long finalidade) {
-            this.finalidade = finalidade;
+        public void setInterferencia(long status) {
+            this.status = status;
         }
     }
 

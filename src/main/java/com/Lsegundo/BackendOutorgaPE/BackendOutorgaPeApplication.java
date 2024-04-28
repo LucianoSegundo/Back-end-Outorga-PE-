@@ -11,7 +11,3 @@ public class BackendOutorgaPeApplication {
 	}
 
 }
-//feito as classes java
-// configurado o banco
-// feito os repositorios
-// proxima coisa configurar o spring securyt

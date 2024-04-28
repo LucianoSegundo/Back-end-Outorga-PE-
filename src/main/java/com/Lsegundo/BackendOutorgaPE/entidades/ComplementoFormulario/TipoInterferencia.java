@@ -3,6 +3,7 @@ package com.Lsegundo.BackendOutorgaPE.entidades.ComplementoFormulario;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "tabela_tipo_interfe")
 public class TipoInterferencia {
 
     @Id
@@ -16,20 +17,20 @@ public class TipoInterferencia {
 
     public  enum valores{
 
-        SUBTERRANEA("Subterrânea"),
-        SUPERFICIAL("Superficial");
+        SUBTERRANEA(1L),
+        SUPERFICIAL(2L);
 
-        String interferencia;
+        long interferencia;
 
-        valores(String interferencia) {
+        valores(long interferencia) {
             this.interferencia = interferencia;
         }
 
-        public String getInterferencia() {
+        public long getInterferencia() {
             return interferencia;
         }
 
-        public void setInterferencia(String interferencia) {
+        public void setInterferencia(long interferencia) {
             this.interferencia = interferencia;
         }
     }
